@@ -33,7 +33,7 @@ const btnDesencriptar = document.querySelector("#btnDesencript");
 const imgMuñeco = document.querySelector("#muñeco");
 const divMsg = document.querySelector("#divMsgNotFound");
 
-
+const invalidCharsRegex = /[^a-z\s]/gi;
 
 btnEncriptar.addEventListener('click', function() {
 
@@ -56,10 +56,14 @@ btnEncriptar.addEventListener('click', function() {
         alert('El texto es demasiado largo. Por lo que tendra que copiar el texto para visualizarlo.');
     }
 
-    pTxt.textContent = encriptar(contentTxtArea);
-    divOutput.appendChild(pTxt);
+    if (invalidCharsRegex.test(contentTxtArea)) {
+        alert('El texto no debe contener mayúsculas, acentos o caracteres especiales.');
+    } else {
+        pTxt.textContent = encriptar(contentTxtArea);
+        divOutput.appendChild(pTxt);
 
-    txtArea.value = "";
+        txtArea.value = "";
+    }
 
 });
 
