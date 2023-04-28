@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>Encriptador</title>
+
+    <!-- Import fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Import styles -->
+    <link rel="stylesheet" href="css/encriptador.css">
+
+    <!-- import icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/Vector.png" alt="logo">
+        </div>
+    </header>
+    <section>
+        <div class="all-container">
+            <div class="input-txt">
+                <textarea name="" id="textToEncript" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div class="input-warning">
+                <img src="images/Vectorwarning.png" alt="warning">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="buttons-container">
+                <button class="buttonss encriptar" id="btnEncript">Encriptar</button>
+                <button class="buttonss desencriptar" id="btnDesencript">Desencriptar</button>
+            </div>
+        </div>
+        <div class="all-container">
+            <div class="output-text" id="outputTxt">
+                <div class="muñeco" id="muñeco">
+                    <img src="images/MuñeconotFound.png" alt="muñeco">
+                </div>
+                <div class="msg-not-found" id="divMsgNotFound">
+                    <h3>Ningún mensaje fue encontrado</h3>
+                    <h6>Ingresa el texto que desees encriptar o desencriptar.</h6>
+                </div>
+            </div>
+            <div class="button-copy">
+                <button class="boton-copy"><i class="fas fa-copy"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
