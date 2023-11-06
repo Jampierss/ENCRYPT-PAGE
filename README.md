@@ -18,7 +18,7 @@ Encript offers the following features:
 <li>Input validation to prevent invalid characters and texts that are too long</li>
 
 <h2>View</h2>
-![Application](./images/App.JPG)
+![Application](images\screenshoot.JPG)
 
 <h2>Contributing</h2>
 If you'd like to contribute to the Encript project, feel free to submit a pull request with your changes. 
