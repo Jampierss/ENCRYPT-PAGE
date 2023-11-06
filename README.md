@@ -17,6 +17,9 @@ Encript offers the following features:
 <li>Copy output text to clipboard with a single click</li>
 <li>Input validation to prevent invalid characters and texts that are too long</li>
 
+<h2>View</h2>
+![Application](./images/App.JPG)
+
 <h2>Contributing</h2>
 If you'd like to contribute to the Encript project, feel free to submit a pull request with your changes. 
 Please ensure that your code follows the project's coding standards and includes appropriate documentation.
